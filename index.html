@@ -179,7 +179,7 @@ function updateImage() {
 
   /* Pixel → HD trick:
      We use scale + brightness to simulate reveal */
-  const scale = 1.2 - pct * 0.2;   // 1.2 → 1.0
+  const scale = 2.0 - pct * 1.0; // 2.0 → 1.0 (much stronger)
   const bright = 0.8 + pct * 0.2;  // 0.8 → 1.0
 
   img.style.transform = `scale(${scale})`;
